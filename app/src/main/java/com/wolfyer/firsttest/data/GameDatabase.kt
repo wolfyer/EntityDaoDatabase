@@ -9,5 +9,6 @@ import androidx.room.RoomDatabase
 
 @Database(entities = arrayOf(Record::class,Word::class), version = 1)
 abstract class GameDatabase :RoomDatabase(){
-
+//取得Dao抽象方法，盡量跟Dao方法一樣
+    abstract fun recordDao():RecordDao
 }

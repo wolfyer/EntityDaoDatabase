@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         先看你的SDK在哪裏 File >> Project Structure >> SDK Location
         打指令： cd /Users/class/Library/Android/sdk
                 cd platform-tools
-                adb看可不可以勇
+                adb看可不可以用 sudo adb
                 adb shell  可以連到模擬器當中
                 裡面是小型linux系統
                 su(google play有的話不能用

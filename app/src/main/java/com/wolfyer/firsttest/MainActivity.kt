@@ -1,5 +1,7 @@
 package com.wolfyer.firsttest
 
+import android.app.Activity
+import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -50,6 +52,10 @@ class MainActivity : AppCompatActivity() {
             list?.forEach{
                 Log.d("read record", "record: ${it.nickname},${it.count}")
             }
+        }
+        binding.bMain2.setOnClickListener {
+            val intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
         }
 
 
